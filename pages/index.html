@@ -17,8 +17,8 @@
     --white: #FFFFFF;
 
     /* GRID BREITEN */
-    --outer-width: 1260px;  /* Äußere Breite für das Hero-Bild Frame */
-    --middle-width: 1100px; /* Haupt-Inhaltsbreite für Fluchtlinie ALLER Elemente */
+    --outer-width: 1260px;
+    --middle-width: 1100px;
   }
 
   *{ margin:0; padding:0; box-sizing:border-box; }
@@ -34,7 +34,6 @@
 
   a{ text-decoration:none; color:inherit; }
 
-  /* HAUPT-GRID: Garantiert die identische linke Fluchtlinie für alle Sektionen */
   .wrap{
     max-width:var(--middle-width);
     margin:0 auto;
@@ -47,7 +46,7 @@
     position:sticky;
     top:0;
     z-index:1000;
-    border-bottom: 1px solid rgba(29, 41, 57, 0.12); /* Dezenter Strich am unteren Ende der Navbar */
+    border-bottom: 1px solid rgba(29, 41, 57, 0.12);
   }
 
   .header-inner{
@@ -64,7 +63,7 @@
 
   .nav-left a{
     font-size:15px;
-    font-weight:600; /* Einheitliche Stärke */
+    font-weight:600;
     color:var(--text-dark);
     transition:opacity .2s ease;
   }
@@ -82,18 +81,17 @@
 
   .nav-cta{
     font-size:15px;
-    font-weight:600; /* Einheitsstärke */
+    font-weight:600;
     color:var(--text-dark);
     white-space:nowrap;
   }
   .nav-cta:hover{ opacity:.7; }
 
-  /* ---------- HERO SECTION ---------- */
   .hero-section{
     background:var(--bg);
     position:relative;
     overflow:hidden;
-    padding-top: 12px; /* Minimaler Abstand nach oben, damit der Strich frei steht */
+    padding-top: 12px;
   }
 
   .hero-outer-frame {
@@ -190,7 +188,6 @@
     margin-top:auto;
   }
 
-  /* ---------- CALENDAR SECTION ---------- */
   .calendar-section{
     padding:80px 0 70px;
   }
@@ -272,7 +269,6 @@
     font-weight:600;
   }
 
-  /* ---------- THREE COLUMNS SECTION ---------- */
   .three-col-section{
     padding:40px 0 80px;
   }
@@ -319,7 +315,6 @@
     color:var(--text-muted);
   }
 
-  /* ---------- ABOUT SECTION ---------- */
   .about-section{
     padding:30px 0 80px;
   }
@@ -360,7 +355,6 @@
     margin-bottom:14px;
   }
 
-  /* ---------- CTA SECTION ---------- */
   .cta-section{
     padding:40px 0 80px;
     text-align:center;
@@ -427,7 +421,6 @@
     color:var(--text-muted);
   }
 
-  /* ---------- FOOTER ---------- */
   footer{
     background:var(--navy);
     color:var(--white);
@@ -498,7 +491,6 @@
   }
   .footer-links a:hover{ color:var(--white); }
 
-  /* ---------- RESPONSIVE ---------- */
   @media (max-width: 900px){
     .wrap { padding:0 24px; }
     .hero-outer-frame{ min-height:auto; }
@@ -650,7 +642,6 @@
     </div>
   </section>
 
-  <!-- THREE AREAS SECTION -->
   <section class="three-col-section">
     <div class="wrap">
       <div class="section-eyebrow">WAS ICH BEI IHNEN ÜBERNEHME</div>
@@ -673,7 +664,6 @@
     </div>
   </section>
 
-  <!-- ABOUT SECTION -->
   <section class="about-section" id="ueber-mich">
     <div class="wrap about-inner">
       <div class="about-image">
@@ -687,7 +677,6 @@
     </div>
   </section>
 
-  <!-- CTA SECTION -->
   <section class="cta-section" id="buchen">
     <div class="wrap">
       <div class="cta-eyebrow">ERSTER SCHRITT</div>
@@ -705,7 +694,6 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer id="kontakt">
     <div class="wrap footer-grid">
       <div class="footer-col">
@@ -750,6 +738,5 @@
       </div>
     </div>
   </footer>
-
 </body>
 </html>
